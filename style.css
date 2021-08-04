@@ -1,0 +1,97 @@
+*,
+body {
+  margin: 0;
+  padding: 0 10px;
+  font-family: 'Poppins', sans-serif !important;
+  box-sizing: border-box;
+}
+
+h1,
+h3 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 20px;
+}
+
+#mainForm {
+  display: grid;
+  min-width: 300px;
+  gap: 10px;
+}
+
+#mainForm input {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.27s;
+  font-size: 16px;
+  border: 1px solid rgb(39, 38, 38) !important;
+}
+
+#mainForm input:focus {
+  box-shadow: 0px 0px 0px 2px rgb(114, 159, 255);
+  transition: 0.27s;
+}
+
+#mainForm button {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid rgb(39, 38, 38);
+  transition: 0.3s;
+}
+
+#mainForm button:hover {
+  background: rgba(0, 0, 0, 0.849);
+  color: #fff;
+  box-shadow: 0 0 0 2px rgb(196, 212, 255);
+  transition: 0.3s;
+}
+
+p#answer {
+  text-align: center;
+  font-size: 15px;
+}
+
+footer,
+footer a {
+  background-color: #000;
+  color: #fff;
+}
+
+footer {
+  padding: 0px !important;
+  margin: 0px !important;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  p#answer {
+    text-align: center;
+    font-size: 14px;
+  }
+  #mainForm input {
+    font-size: 15px;
+  }
+  #mainForm button {
+    font-size: 15px;
+  }
+}

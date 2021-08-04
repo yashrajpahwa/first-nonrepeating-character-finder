@@ -56,7 +56,7 @@ mainForm.addEventListener('submit', (e) => {
     .find((i) => i.letterIndex !== null);
 
   if (finalResultantLetter) {
-    answerLine.innerText = `${finalResultantLetter.character} is the first letter that is repeated only once`;
+    answerLine.innerText = `"${finalResultantLetter.character.toUpperCase()}" is the first letter that is repeated only once`;
   } else {
     answerLine.innerText = `There is no such letter`;
   }
